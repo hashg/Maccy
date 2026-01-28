@@ -202,7 +202,15 @@ class Clipboard {
       }
 
       types.forEach { type in
-        contents.append(HistoryItemContent(type: type.rawValue, value: item.data(forType: type)))
+        var value = item.data(forType: type)
+        
+        // Apply redaction to string content if enabled
+        if type == .string, let stringValue = item.string(forType: .string) {
+          let redactedString = TextRedactor.shared.redactIfEnabled(stringValue)
+          value = redactedString.data(using: .utf8)
+        }
+        
+        contents.append(HistoryItemContent(type: type.rawValue, value: value))
       }
     })
 

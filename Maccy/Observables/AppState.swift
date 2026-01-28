@@ -191,6 +191,13 @@ class AppState: @unchecked Sendable {
             IgnoreSettingsPane()
           },
           Settings.Pane(
+            identifier: Settings.PaneIdentifier.redaction,
+            title: NSLocalizedString("Title", tableName: "RedactionSettings", comment: ""),
+            toolbarIcon: NSImage.eye!
+          ) {
+            RedactionSettingsPane()
+          },
+          Settings.Pane(
             identifier: Settings.PaneIdentifier.advanced,
             title: NSLocalizedString("Title", tableName: "AdvancedSettings", comment: ""),
             toolbarIcon: NSImage.gearshape2!

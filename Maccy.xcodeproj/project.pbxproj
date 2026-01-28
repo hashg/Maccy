@@ -127,6 +127,7 @@
 		DAFE2DDA268A521B00990986 /* String+Shortened.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE2DD9268A521A00990986 /* String+Shortened.swift */; };
 		DAFE2DE9268A9B1B00990986 /* HistoryItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE2DE8268A9B1B00990986 /* HistoryItemTests.swift */; };
 		DAFEF0B8249D7DEE006029E8 /* KeyboardShortcuts.Name+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFEF0B7249D7DEE006029E8 /* KeyboardShortcuts.Name+Shortcuts.swift */; };
+		EFB123462C3A4B5C00607082 /* RedactionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB123452C3A4B5C00607081 /* RedactionFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +189,7 @@
 		DA05B5102C234CB1006980FE /* MaccyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaccyApp.swift; sourceTree = "<group>"; };
 		DA05B5122C234DCF006980FE /* HistoryItemContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItemContent.swift; sourceTree = "<group>"; };
 		DA05B5132C234DCF006980FE /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		EFB123452C3A4B5C00607081 /* RedactionFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactionFilter.swift; sourceTree = "<group>"; };
 		DA083A6D2C42E8E8004259A0 /* NSImage+Resized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Resized.swift"; sourceTree = "<group>"; };
 		DA08FDE7282596FA0001F3DA /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DA0D57762E4246B3005101AF /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/AdvancedSettings.strings; sourceTree = "<group>"; };
@@ -597,6 +599,7 @@
 			children = (
 				DA05B5132C234DCF006980FE /* HistoryItem.swift */,
 				DA05B5122C234DCF006980FE /* HistoryItemContent.swift */,
+				EFB123452C3A4B5C00607081 /* RedactionFilter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1103,6 +1106,7 @@
 				DAE28500232257D20080E394 /* ColorImage.swift in Sources */,
 				DA7A753E26A52F0F00DC16EF /* NSImage+Names.swift in Sources */,
 				DA20FA782B082E1A00056DD5 /* NSSound+Named.swift in Sources */,
+				EFB123462C3A4B5C00607082 /* RedactionFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
