@@ -58,7 +58,7 @@ jobs:
         if: success() && github.ref == 'refs/heads/master'
         id: version
         run: |
-          VERSION=$(grep -i "CFBundleShortVersionString" Maccy/Info.plist | sed 's/.*<string>\(.*\)<\/string>.*/\1/')
+          VERSION=$(xcodebuild -project Maccy.xcodeproj -scheme Maccy -showBuildSettings | grep MARKETING_VERSION | tail -1 | sed 's/.*= //')
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Create Release
