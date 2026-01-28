@@ -10,11 +10,7 @@ struct ContentView: View {
 
   var body: some View {
     ZStack {
-      if #available(macOS 26.0, *) {
-        GlassEffectView()
-      } else {
-        VisualEffectView()
-      }
+      VisualEffectView()
 
       VStack(alignment: .leading, spacing: 0) {
         KeyHandlingView(searchQuery: $appState.history.searchQuery, searchFocused: $searchFocused) {
