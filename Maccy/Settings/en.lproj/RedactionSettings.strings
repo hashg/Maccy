@@ -1,0 +1,17 @@
+"Title" = "Redaction";
+"EnableRedaction" = "Enable text redaction";
+"EnableRedactionDescription" = "Automatically redact sensitive information from copied text based on regex patterns.";
+"Filters" = "Filters";
+"NoFiltersConfigured" = "No filters configured";
+"AddCustomFilter" = "Add Custom Filter";
+"ResetToDefaults" = "Reset to Defaults";
+"DeleteFilter" = "Delete this filter";
+"FilterDescription" = "Description";
+"DescriptionPlaceholder" = "e.g., My Pattern";
+"RegexPattern" = "Regex Pattern";
+"PatternPlaceholder" = "e.g., \\b\\d{3}-\\d{2}-\\d{4}\\b";
+"ReplacementText" = "Replacement Text";
+"ReplacementPlaceholder" = "e.g., [REDACTED]";
+"Save" = "Save";
+"Cancel" = "Cancel";
+"System" = "System";
